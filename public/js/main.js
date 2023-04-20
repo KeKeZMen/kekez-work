@@ -10,9 +10,9 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   "use strict";
 
   var e = /*#__PURE__*/function () {
-    function e(_e, t, s, l, r, o) {
+    function e(_e, t, s, l, r, i) {
       _classCallCheck(this, e);
-      this.marginBetweenElements = l, this.firstControllButtonId = r, this.elementsFromClick = o, this.carousel = document.querySelector(_e), this.firstEl = document.querySelectorAll(t)[0], this.controllButtons = document.querySelectorAll(s);
+      this.marginBetweenElements = l, this.firstControllButtonId = r, this.elementsFromClick = i, this.carousel = document.querySelector(_e), this.firstEl = document.querySelectorAll(t)[0], this.controllButtons = document.querySelectorAll(s);
     }
     _createClass(e, [{
       key: "sliderInit",
@@ -42,19 +42,11 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
     }]);
     return e;
   }();
-  new e(".tracing__carousel__line", ".tracing__carousel__line div", ".tracing__carousel button", 24, "tracingCarouselLeft", 1).sliderInit(), new e(".advertising__carousel__line", ".advertising__carousel__line__element", ".advertising__carousel__controll", 0, "advertisingCarouselLeft", 1).sliderInit(), new e(".services__carousel__line", ".services__carousel__line div", ".services__carousel__controll__button", 24, "servicesCarouselLeft", 1).sliderInit(), document.querySelectorAll(".services__carousel__controll__button").forEach(function (e) {
+  new e(".tracing__carousel__line", ".tracing__carousel__element", ".tracing__carousel button", 24, "tracingCarouselLeft", 1).sliderInit(), new e(".advertising__carousel__line", ".advertising__carousel__line__element", ".advertising__carousel__controll", 0, "advertisingCarouselLeft", 1).sliderInit(), new e(".services__carousel__line", ".services__carousel__line div", ".services__carousel__controll__button", 24, "servicesCarouselLeft", 1).sliderInit(), document.querySelectorAll(".services__carousel__controll__button").forEach(function (e) {
     e.addEventListener("click", function (e) {
       document.querySelectorAll(".services__carousel__controll__button").forEach(function (e) {
         e.classList.remove("active");
       }), e.target.classList.add("active");
     });
-  });
-  var t = 0;
-  document.querySelector(".scrollbtn").addEventListener("click", function () {
-    t <= 4878 ? t += 1e3 : t = 0, window.scrollTo({
-      behavior: "smooth",
-      left: 0,
-      top: t
-    }), console.log(window.scrollY);
   });
 })();

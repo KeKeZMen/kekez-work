@@ -2,7 +2,7 @@ import Slider from "./modules/Slider.js"
 
 const worksCarousel = new Slider(
   ".tracing__carousel__line",
-  ".tracing__carousel__line div",
+  ".tracing__carousel__element",
   ".tracing__carousel button",
   24,
   "tracingCarouselLeft",
@@ -30,29 +30,12 @@ const serviceCarousel = new Slider(
 );
 serviceCarousel.sliderInit();
 
-document
-  .querySelectorAll(".services__carousel__controll__button")
-  .forEach((button) => {
-    button.addEventListener("click", (e) => {
-      document
-        .querySelectorAll(".services__carousel__controll__button")
-        .forEach((button) => {
-          button.classList.remove("active");
-        });
-      e.target.classList.add("active");
+document.querySelectorAll(".services__carousel__controll__button").forEach((button) => {
+  button.addEventListener("click", (e) => {
+    document.querySelectorAll(".services__carousel__controll__button").forEach((button) => {
+      button.classList.remove("active");
     });
+
+    e.target.classList.add("active");
   });
-
-let scrolled = 0
-
-  document.querySelector(".scrollbtn").addEventListener("click", () => {
-    if(scrolled <= 4878) scrolled += 1000
-    else scrolled = 0
-
-    window.scrollTo({
-      behavior: "smooth",
-      left: 0,
-      top: scrolled
-    })
-    console.log(window.scrollY);
-  });
+});
