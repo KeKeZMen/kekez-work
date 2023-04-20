@@ -1,0 +1,70 @@
+.achievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+
+  &__title {
+    align-self: flex-start;
+    margin-right: 30px;
+
+    & h2 {
+      font-size: 40px;
+      line-height: 73px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    &__devider {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 60px;
+
+      & .devider__element {
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+
+    &__block {
+      padding: 25px 20px 30px;
+      border: 1px solid #898989;
+      width: 318px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+
+      & h3 {
+        color: #db3138;
+
+        span {
+          font-size: 40px;
+          color: #db3138;
+          margin-left: 2px;
+        }
+      }
+    }
+
+    &__second {
+      margin-top: 40px;
+    }
+  }
+}

@@ -42,6 +42,50 @@ header {
   margin-bottom: 180px;
 }
 
+.header__content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__content__title h1 {
+  font-size: 150px;
+  color: #db3138;
+}
+
+.header__content__title button {
+  background: #db3138;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.header__content__title__text {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.header__content__devider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header__content__devider .devider__element {
+  margin-right: 30px;
+}
+
+.header__content__devider .devider__element:last-child {
+  margin-right: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -95,50 +139,6 @@ nav .menu span:last-child {
   bottom: 0;
 }
 
-.header__content__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.header__content__title h1 {
-  font-size: 150px;
-  color: #db3138;
-}
-
-.header__content__devider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.header__content__devider .devider__element {
-  margin-right: 30px;
-}
-
-.header__content__devider .devider__element:last-child {
-  margin-right: 0;
-}
-
-.header__content__title__text {
-  font-size: 40px;
-  line-height: 48px;
-  text-align: center;
-  width: 700px;
-  margin-bottom: 50px;
-}
-
-.header__content__title button {
-  background: #db3138;
-  border: none;
-  padding: 15px 25px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-
 .contancts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -158,6 +158,14 @@ nav .menu span:last-child {
   text-align: center;
 }
 
+.contancts > div:first-child {
+  border-right: 1px solid #898989;
+}
+
+.contancts > div:last-child {
+  border-left: 1px solid #898989;
+}
+
 .contancts > div > h2 {
   margin-bottom: 20px;
 }
@@ -167,14 +175,6 @@ nav .menu span:last-child {
   font-size: 24px;
   line-height: 33.6px;
   text-transform: uppercase;
-}
-
-.contancts div:first-child {
-  border-right: 1px solid #898989;
-}
-
-.contancts div:last-child {
-  border-left: 1px solid #898989;
 }
 
 .achievements {
@@ -197,18 +197,18 @@ nav .menu span:last-child {
   margin-bottom: 40px;
 }
 
-.achievements__title__rhombus {
+.achievements__title__devider {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 60px;
 }
 
-.achievements__title__rhombus .devider__element {
+.achievements__title__devider .devider__element {
   margin-right: 30px;
 }
 
-.achievements__title__rhombus .devider__element:last-child {
+.achievements__title__devider .devider__element:last-child {
   margin-right: 0;
 }
 
@@ -410,12 +410,12 @@ nav .menu span:last-child {
   position: absolute;
 }
 
-#advertisingCarouselLeft {
+.advertising__carousel #advertisingCarouselLeft {
   bottom: 0;
   left: 0;
 }
 
-#advertisingCarouselRight {
+.advertising__carousel #advertisingCarouselRight {
   bottom: 0;
   right: 0;
   transform: rotate(180deg);

@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+
+  & .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+      margin-right: 40px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  & .menu {
+    border: none;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 25px;
+
+    & span {
+      position: absolute;
+      display: block;
+      width: 40px;
+      right: 0;
+      height: 3px;
+      background-color: #db3138;
+
+      &:first-child {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        left: 0;
+        top: auto;
+        bottom: auto;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

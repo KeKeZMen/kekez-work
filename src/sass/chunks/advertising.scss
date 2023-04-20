@@ -1,0 +1,48 @@
+.advertising {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 134px;
+
+    &__element {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+
+      h2 {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__devider {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0;
+
+      & .devider__element {
+        margin-left: 30px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @import "./advertising__carousel.scss";
+}

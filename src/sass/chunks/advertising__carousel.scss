@@ -1,0 +1,53 @@
+&__carousel {
+  position: relative;
+
+  &__line {
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    width: 636px;
+
+    &.dragging {
+      cursor: grab;
+      scroll-behavior: auto;
+    }
+
+    &__element {
+      height: 636px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        text-align: center;
+        width: 422px;
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &__controll {
+    background: url("../img/arrow.svg") no-repeat center;
+    width: 71px;
+    height: 71px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  #advertisingCarouselLeft {
+    bottom: 0;
+    left: 0;
+  }
+
+  #advertisingCarouselRight {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}

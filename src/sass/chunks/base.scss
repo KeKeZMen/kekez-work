@@ -27,3 +27,11 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
+
+.devider__element {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #db3138;
+  transform: rotate(45deg);
+}
