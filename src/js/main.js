@@ -42,3 +42,17 @@ document
       e.target.classList.add("active");
     });
   });
+
+let scrolled = 0
+
+  document.querySelector(".scrollbtn").addEventListener("click", () => {
+    if(scrolled <= 4878) scrolled += 1000
+    else scrolled = 0
+
+    window.scrollTo({
+      behavior: "smooth",
+      left: 0,
+      top: scrolled
+    })
+    console.log(window.scrollY);
+  });
