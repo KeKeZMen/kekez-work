@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #141414;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}

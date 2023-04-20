@@ -1,0 +1,71 @@
+.tracing__carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 250px;
+
+  & button {
+    background: url("../img/arrow.svg") no-repeat center;
+    width: 71px;
+    height: 71px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+
+    &:first-child {
+      left: -80px;
+    }
+
+    &:last-child {
+      transform: rotate(180deg);
+      right: -80px;
+    }
+  }
+
+  &__line {
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    height: 500px;
+
+    &.dragging {
+      cursor: grab;
+      scroll-behavior: auto;
+    }
+
+    &.dragging img {
+      pointer-events: none;
+    }
+  }
+
+  &__element {
+    margin-left: 24px;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &__text {
+      padding: 30px 40px;
+      background-color: #db3138;
+      font-size: 18px;
+      line-height: 25px;
+      width: 366px;
+      height: 70px;
+      position: absolute;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      bottom: 36px;
+    }
+  }
+}

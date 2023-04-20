@@ -1,0 +1,330 @@
+@import "./chunks/base.scss";
+
+.devider__element {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #db3138;
+  transform: rotate(45deg);
+}
+
+header {
+  background: url("../img/header.png") no-repeat center;
+  height: 100vh;
+  margin-bottom: 180px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .links a {
+  margin-right: 40px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav .menu {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+nav .menu span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  right: 0;
+  height: 3px;
+  background-color: #db3138;
+}
+
+nav .menu span:first-child {
+  top: 0;
+}
+
+nav .menu span:nth-child(2) {
+  left: 0;
+  top: auto;
+  bottom: auto;
+}
+
+nav .menu span:last-child {
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.header__content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__content__title h1 {
+  font-size: 150px;
+  color: #db3138;
+}
+
+.header__content__devider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.header__content__devider .devider__element {
+  margin-right: 30px;
+}
+
+.header__content__devider .devider__element:last-child {
+  margin-right: 0;
+}
+
+.header__content__title__text {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+.header__content__title button {
+  background-color: #db3138;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.contancts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #898989;
+  border-left: none;
+  border-right: none;
+  margin-top: 130px;
+}
+
+.contancts > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contancts > div > h2 {
+  margin-bottom: 20px;
+}
+
+.contancts > div > p {
+  color: #db3138;
+  font-size: 24px;
+  line-height: 33.6px;
+  text-transform: uppercase;
+}
+
+.contancts div:first-child {
+  border-right: 1px solid #898989;
+}
+
+.contancts div:last-child {
+  border-left: 1px solid #898989;
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.achievements__title {
+  align-self: flex-start;
+  margin-right: 30px;
+}
+
+.achievements__title h2 {
+  font-size: 40px;
+  line-height: 73px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.achievements__title__rhombus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.achievements__title__rhombus .devider__element {
+  margin-right: 30px;
+}
+
+.achievements__title__rhombus .devider__element:last-child {
+  margin-right: 0;
+}
+
+.achievements__title__text {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.achievements__blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+
+.achievements__blocks__block {
+  padding: 25px 20px 30px;
+  border: 1px solid #898989;
+  width: 318px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.achievements__blocks__block h3 {
+  color: #db3138;
+}
+
+.achievements__blocks__block h3 span {
+  font-size: 40px;
+  color: #db3138;
+  margin-left: 2px;
+}
+
+.achievements__blocks__second {
+  margin-top: 40px;
+}
+
+@import "./chunks/tracing__carousel.scss";
+
+.advertising {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.advertising__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 134px;
+}
+
+.advertising__text__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.advertising__text__element h2 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.advertising__text__devider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.advertising__text__devider .devider__element {
+  margin-left: 30px;
+}
+
+.advertising__text__devider .devider__element:first-child {
+  margin-left: 0;
+}
+
+.advertising__carousel {
+  position: relative;
+}
+
+.advertising__carousel__line {
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  width: 636px;
+}
+
+.advertising__carousel__line.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.advertising__carousel__line__element {
+  height: 636px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advertising__carousel__line__element p {
+  text-align: center;
+  width: 422px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.advertising__carousel__controll {
+  background: url("../img/arrow.svg") no-repeat center;
+  width: 71px;
+  height: 71px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+#advertisingCarouselLeft {
+  bottom: 0;
+  left: 0;
+}
+
+#advertisingCarouselRight {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+@import "chunks/services.scss";
+
+@import "chunks/works.scss";
+
+@import "chunks/footer.scss"
