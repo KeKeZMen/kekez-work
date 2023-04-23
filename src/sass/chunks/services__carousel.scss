@@ -25,15 +25,18 @@
     scroll-behavior: smooth;
     display: flex;
     width: 1296px;
+    scroll-snap-type: x mandatory;
 
     &__first {
       width: 100%;
       display: flex;
+      scroll-snap-align: start;
     }
 
     &__second {
       width: 100%;
       display: flex;
+      scroll-snap-align: start;
     }
 
     &.dragging {

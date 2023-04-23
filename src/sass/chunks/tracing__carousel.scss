@@ -26,14 +26,21 @@
 
   &__line {
     cursor: pointer;
-    overflow: hidden;
+    overflow-x: auto;
     scroll-behavior: smooth;
     display: flex;
     height: 500px;
-
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+    
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    
     &.dragging {
       cursor: grab;
       scroll-behavior: auto;
+      scroll-snap-type: none;
     }
 
     &.dragging img {
@@ -49,6 +56,8 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    scroll-snap-align: start;
+    user-select: none;
 
     &:first-child {
       margin-left: 0;
